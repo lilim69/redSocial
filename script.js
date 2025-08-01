@@ -31,11 +31,16 @@ document.getElementById("postForm").addEventListener("submit", function (e) {
 
   // se agrega funcionalidad al boton de me gusta
   likeButton.addEventListener("click", () => {
-    likeButton.classList.toggle("liked"); // cambia el como se ve
-    let count = parseInt(likeButton.querySelector("span").textContent);
-    // si esta marcado como liked, se incrementa el contador; si no, se disminuye
-    likeButton.querySelector("span").textContent = likeButton.classList.contains("liked") ? ++count : --count;
-  });
+  likeButton.classList.add("liked");
+setTimeout(() => {
+  likeButton.classList.remove("liked");
+}, 300); // tiempo igual al de tu animacion en ms
+// activa animacion
+  let count = parseInt(likeButton.querySelector("span").textContent);
+  count++; // siempre suma 1
+  likeButton.querySelector("span").textContent = count;
+});
+
 
   // se agregan titulo y descripcion a la tarjeta
   card.appendChild(titleElement);

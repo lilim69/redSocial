@@ -27,7 +27,7 @@ document.getElementById("postForm").addEventListener("submit", function (e) {
   // se crea el boton de me gusta con contador inicial en 0
   const likeButton = document.createElement("div");
   likeButton.className = "like-btn";
-  likeButton.innerHTML = "❤️ Me Gusta <span>0</span>";
+  likeButton.innerHTML = "💜 Me Gusta <span>0</span>";
 
   // se agrega funcionalidad al boton de me gusta
   likeButton.addEventListener("click", () => {

@@ -28,9 +28,10 @@ header {
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  background: linear-gradient(to right, #ebe6e6, #80138a);
+  background: linear-gradient(to right, #ebe6e6, #80138a); /* degrade suave y elegante */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 }
 
 header p {

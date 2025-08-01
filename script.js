@@ -34,8 +34,7 @@ document.getElementById("postForm").addEventListener("submit", function (e) {
   likeButton.classList.add("liked");
 setTimeout(() => {
   likeButton.classList.remove("liked");
-}, 300); // tiempo igual al de tu animacion en ms
-// activa animacion
+}, 300);
   let count = parseInt(likeButton.querySelector("span").textContent);
   count++; // siempre suma 1
   likeButton.querySelector("span").textContent = count;
